@@ -48,12 +48,12 @@ nav:
   # what everybody needs to know to understand Islandora and interact with it
   # Possibly add page/section: How to use this documentation (containing user role definitions)
   - Concepts:
-      - 'Component Overview': 'installation/component_overview.md'
-          # moved from "Installation" section; alternatively duplicate a simplified version in the overview section
-          # also see Architecture Diagram in Developer documentation
-          # also see user-intro.md#architecture for the cheeseburger/bento box analogy
+      - 'Software Stack': 'concepts/stack.md'
+          # Includes bento box and architecture diagram,
+          # Includes short summaries of each part. 
+          # 
+          # Replaces user-intro.md#architecture.
           # Conceptual/ reference, all user roles/ sys admins/ developers: 
-          # procedural information should be moved out installation guides
       - 'Modelling content in Islandora 8 vs. 7': 'user-documentation/objects_to_resource_nodes.md'
               # conceptual, all user roles
               # moved from User documentation > Content in Islandora 8
@@ -67,6 +67,7 @@ nav:
       - 'Ansible Playbook': 'installation/playbook.md'
       - Manual Installation: 
         - 'Introduction': 'installation/manual/introduction.md'
+        - 'Component overview': 'installation/component_overview.md'
         - 'Preparing a LAPP Webserver': 'installation/manual/preparing_a_webserver.md'
         - 'Installing Composer, Drush, and Drupal': 'installation/manual/installing_composer_drush_and_drupal.md'
         - 'Installing Tomcat and Cantaloupe': 'installation/manual/installing_tomcat_and_cantaloupe.md'
@@ -166,7 +167,6 @@ nav:
     - 'JWT Authentication': 'technical-documentation/jwt.md'
           # moved from Developer documentation
   - Documentation for Developers:
-    - 'Architecture Diagram': 'technical-documentation/diagram.md'
     - REST Documentation:
       - 'Introduction': 'technical-documentation/using-rest-endpoints.md'
       - 'GET': 'technical-documentation/rest-get.md'
